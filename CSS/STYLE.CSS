@@ -8,24 +8,28 @@
   --cor-primaria: #9EAC71;
   --cor-secundaria: #545b3c;
   --cor-tres: #ece9e5;
+  --cor-quatro:#C7B7A3;
   --BRANCO: white;
   --preto: black;
 }
-.nav-topo{
+
+.nav-topo {
   background-color: var(--cor-secundaria);
   display: flex;
   align-items: center;
   justify-content: end;
   height: 30px;
 }
-.nav-topo li{
+
+.nav-topo li {
   color: var(--BRANCO);
 }
+
 .nav-topo a {
   color: var(--BRANCO);
   text-decoration: none;
   padding: 1rem;
- 
+
 }
 
 header {
@@ -53,7 +57,6 @@ header {
 }
 
 #busca {
-
   height: 30px;
   width: 400px;
   border-radius: 20px;
@@ -66,7 +69,7 @@ header {
 .caixa-busca ::placeholder {
   padding-left: 1rem;
   color: var(--cor-tres);
-  
+
 }
 
 #btn-busca {
@@ -77,34 +80,35 @@ header {
   cursor: pointer;
 
 }
-.links-header :hover{
-  color: var(--cor-tres);
- 
-}
-.links-header a {
 
+.links-header :hover {
+  color: var(--cor-tres);
+
+}
+
+.links-header a {
   font-size: 25px;
   text-decoration: none;
   margin: 2rem;
   color: var(--BRANCO);
-
 }
 
-.nav-links{
+.nav-links {
   background-color: var(--cor-tres);
   display: flex;
   justify-content: center;
   height: 30px;
 }
-.nav-links a{
- 
+
+.nav-links a {
   color: var(--cor-secundaria);
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
   margin-right: 7rem;
- 
+
 }
+
 /*ajuda*/
 #ok {
   display: flex;
@@ -127,17 +131,6 @@ header {
   text-align: justify;
 }
 
-#babe {
-  color: white;
-  font-weight: bold;
-  padding: 30px;
-  margin: 30px 20px;
-  background-color: var(--cor-secundaria);
-  border-radius: 50px;
-  width: 1000px;
-  width: 800px;
-}
-
 .sara {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -145,6 +138,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .btn-fale {
   background-color: var(--cor-primaria);
   color: white;
@@ -158,37 +152,46 @@ header {
 }
 
 #baby {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   color: white;
   font-weight: bold;
   padding: 30px;
   margin: 30px 20px;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-quatro);
   border-radius: 50px;
-  width: 1000px;
+  width: 800px;
+  height: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
 
+#babe {
+  display: grid;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 30px;
+  margin: 30px 20px;
+  background-color: var(--cor-quatro);
+  border-radius: 50px;
+  width: 800px;
+  height: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
-.sara{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 #img {
   display: flex;
   align-items: center;
   margin: 20px 70px;
   flex-direction: column;
 }
-#login{
+
+#login {
   border: 4px solid var(--BRANCO);
-  border-radius:40px;
+  border-radius: 40px;
   background-color: var(--BRANCO);
   position: relative;
   justify-content: center;
 }
-
-
-
- 
