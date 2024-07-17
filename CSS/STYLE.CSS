@@ -134,7 +134,7 @@ header {
 .sara {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  gap: 5px;
   align-items: center;
   justify-content: center;
 }
