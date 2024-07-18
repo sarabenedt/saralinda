@@ -321,9 +321,9 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: var(--cor-quatro);
   border-radius: 50px;
   width: 800px;
-  height: 100px;
+  height: 130px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #babe {
@@ -336,9 +336,9 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: var(--cor-quatro);
   border-radius: 50px;
   width: 800px;
-  height: 100px;
+  height: 130px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #img {
@@ -354,4 +354,23 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: var(--BRANCO);
   position: relative;
   justify-content: center;
+}
+#sar{
+  font-size: 18px;
+}
+#central{
+  background-color:#978773;
+  width: 1905px;
+  margin-top: 200px;
+  height: 100px;
+  text-decoration: none;
+  color: #462a05;
+}
+.sa{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+#ajuda{
+  margin-left: 1700px;
 }
