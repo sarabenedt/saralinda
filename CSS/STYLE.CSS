@@ -44,6 +44,7 @@ header {
 }
 
 .logo {
+  text-decoration: none;
   display: flex;
   align-items: center;
   font-size: 22px;
@@ -361,16 +362,36 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 #central{
   background-color:#978773;
   width: 1905px;
-  margin-top: 200px;
   height: 100px;
   text-decoration: none;
-  color: #462a05;
 }
 .sa{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  margin-top: 20px;
+ text-decoration: none;
+  margin-top: 20%;
+  display: flex;
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  align-items: center;
+  margin-left: 41%;
+  color: #ffffff;
 }
 #ajuda{
-  margin-left: 1700px;
+margin-left: 45.9%;
+justify-content: center;
+margin-top: 0.5%;
+}
+.sarinha{
+  text-decoration: none;
+  color: #ffffff;
+
+}
+.oka{
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 45% ;
+  margin-top: 0.3%;
+}
+.sari{
+  text-decoration: 0;
 }
