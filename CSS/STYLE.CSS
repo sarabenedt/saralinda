@@ -360,7 +360,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
 }
 #central{
-  background-color:#978773;
+  background-color:var(--cor-quatro);
   width: 1905px;
   height: 100px;
   text-decoration: none;
