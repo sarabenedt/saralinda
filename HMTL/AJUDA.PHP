@@ -16,7 +16,7 @@
     <header>
 
         <div class="logo">
-            <a href="../HMTL/INDEX.HTML"><img src="../IMGS/logo.png" alt="" width="100px"></a>
+            <a href="../HMTL/INDEX.PHP"><img src="../IMGS/logo.png" alt="" width="100px"></a>
          <h1>Getting <br>
                 Books</h1>
         </div>
