@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ajuda</title>
-    <link rel="stylesheet" href="../CSS/STYLE.CSS">
+    <link rel="stylesheet" href="../CSS/ajuda.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,11 @@
             <a href=""><img src="../IMGS/exchange.png" alt="" width="30px">Trocas</a>
             <a href=""><img src="../IMGS/person.png" alt="" width="30px">Usuário</a>
         </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+</div>
     </header>
     <nav class="nav-links">
         <a href="#">Categorias</a>

@@ -1,8 +1,7 @@
-// Selecionar elementos do DOM
-const hamburgerMenu = document.querySelector('.nav-links');
-const navbarNav = document.querySelector('.links-header');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.links-header');
+const navsLinks = document.querySelector('.nav-links');
 
-// Adicionar evento de clique no ícone do hamburger
 hamburgerMenu.addEventListener('click', () => {
-  navbarNav.classList.toggle('active');
+  navLinks.classList.toggle('show');
 });

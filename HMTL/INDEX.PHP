@@ -11,7 +11,7 @@
 <body>
     <nav class="nav-topo">
         <a href="">Sobre a Getting Books</a>
-     <li><a href="../HMTL/AJUDA.HTML">Central De Ajuda</a></li>
+     <li><a href="../HMTL/AJUDA.PHP">Central De Ajuda</a></li>
     </nav>
     <header>
 
