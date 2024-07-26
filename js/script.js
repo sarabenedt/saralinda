@@ -4,4 +4,5 @@ const navsLinks = document.querySelector('.nav-links');
 
 hamburgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('show');
+  navsLinks.classList.toggle('show');
 });

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --cor-primaria: #9EAC71;
+    --cor-secundaria: #545b3c;
+    --cor-tres: #ece9e5;
+    --cor-quatro:#C7B7A3;
+    --BRANCO: white;
+    --preto: black;
+    --s: #ffdcc2;
+  }
+  
+  .nav-topo {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
+  }
+  
+  .nav-topo li {
+    color: var(--BRANCO);
+  }
+  
+  .nav-topo a {
+    color: var(--BRANCO);
+    text-decoration: none;
+    padding: 1rem;
+  
+  }
+  
+  header {
+    background-color: var(--cor-primaria);
+    color: var(--BRANCO);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  
+  }
+  
+  .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .caixa-busca {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  
+  #busca {
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  
+  
+  }
+  
+  .caixa-busca ::placeholder {
+    padding-left: 1rem;
+    color: var(--cor-tres);
+  
+  }
+  
+  #btn-busca {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+  
+  }
+  
+  .links-header :hover {
+    color: var(--cor-tres);
+  
+  }
+ 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+
+  .links-header a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 2rem;
+    color: var(--BRANCO);
+  }
+  
+  .nav-links {
+    background-color: var(--cor-tres);
+    display: flex;
+    justify-content: center;
+    height: 30px;
+  }
+  
+  .nav-links a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 7rem;
+  
+  }
+
+
+#ok {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .titulo1 {
+    display: flex;
+    margin-left: 30px;
+    font-size: 35px;
+    align-items: center;
+    margin: 6%;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: var(--cor-primaria);
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+  }
+  
+  .sara {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-fale {
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px;
+    margin: 3%;
+  }
+  
+  #baby {
+    display: grid;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px 50px;
+    background-color: var(--cor-quatro);
+    border-radius: 50px;
+    width: 600px;
+    height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  #babe {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 50px;
+    background-color: var(--cor-quatro);
+    border-radius: 50px;
+    width: 600px;
+    height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  #img {
+    display: flex;
+    align-items: center;
+    margin: 20px 70px;
+    flex-direction: column;
+  }
+  
+  #login {
+    border: 4px solid var(--BRANCO);
+    border-radius: 40px;
+    background-color: var(--BRANCO);
+    position: relative;
+    justify-content: center;
+  }
+  #sar{
+    font-size: 17px;
+    justify-content: center;
+  }
+  #central{
+    background-color:var(--cor-quatro);
+    width: 1905px;
+    height: 100px;
+    text-decoration: none;
+  }
+  .sa{
+   text-decoration: none;
+    margin-top: 20%;
+    display: flex;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 41%;
+    color: #ffffff;
+  }
+  #ajuda{
+  margin-left: 45.9%;
+  justify-content: center;
+  margin-top: 0.5%;
+  }
+  .sarinha{
+    text-decoration: none;
+    color: #ffffff;
+  
+  }
+  .oka{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 45% ;
+    margin-top: 0.3%;
+  }
+  .sari{
+    text-decoration: 0;
+  }
+   
