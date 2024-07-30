@@ -10,24 +10,28 @@
 
 <body>
     <header class="perguntas">
-        <h1>Enviar Pergunta</h1>
+        <h1 >Enviar Pergunta</h1>
     </header>
 
     <div id="formulario-pergunta">
-        <h2>Envie sua Pergunta</h2>
-        <form action="" method="post">
-            <label for="nome">Seu Nome:</label><br>
+        <h2 class="titulo2" >Envie sua Pergunta</h2>
+        </div>
+        <form  class="label" action="" method="post">
+            <label id="text1" for="nome">Seu Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br><br>
 
-            <label for="email">Seu E-mail:</label><br>
+            <label id="text1" for="email">Seu E-mail:</label><br>
             <input type="email" id="email" name="email" required><br><br>
 
-            <label for="pergunta">Sua Pergunta:</label><br>
+            <label id="text1" for="pergunta">Sua Pergunta:</label><br>
             <textarea id="pergunta" name="pergunta" rows="4" required></textarea><br><br>
 
-            <input type="submit" value="Enviar">
-        </form>
+            <input id="enviar2" type="submit" value="Enviar">
+            <div>
+        <a class="retornar" href="AJUDA.PHP">Voltar para a Ajuda</a>
     </div>
+        </form>
+    
 
     <?php
     // Verifica se o formulário foi enviado
@@ -54,9 +58,7 @@
     }
     ?>
 
-    <div>
-        <a href="AJUDA.PHP">Voltar para a Ajuda</a>
-    </div>
+   
 </body>
 
 </html>
