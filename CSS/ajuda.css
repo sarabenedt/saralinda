@@ -58,7 +58,24 @@ body {
   padding: 1rem;
   /* Espaçamento interno */
 }
-
+.container {
+  position: relative;
+  display: inline-block;
+}
+.imagem {
+  max-width: 100%;
+  height: auto;
+}
+.formulario {
+  position: absolute;
+  top: 20%; /* Ajuste a posição vertical */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 /* Estilo para o cabeçalho do site */
 header {
   background-color: var(--cor-primaria);
@@ -219,7 +236,7 @@ header {
   /* Layout flexível */
   margin-left: 30px;
   /* Margem esquerda */
-  font-size: 35px;
+  font-size: 25px;
   /* Tamanho da fonte */
   align-items: center;
   /* Alinhamento vertical */
@@ -249,8 +266,7 @@ header {
   /* Espaçamento entre itens */
   align-items: center;
   /* Alinhamento vertical */
-  justify-content: center;
-  /* Centraliza itens */
+ 
 }
 
 /* Estilo para os botões de contato */
@@ -287,7 +303,7 @@ header {
   /* Peso da fonte */
   padding: 20px;
   /* Espaçamento interno */
-  margin: 10px 50px;
+  margin: 10px 150px;
   /* Margem */
   background-color: var(--cor-quatro);
   /* Cor de fundo */
@@ -315,7 +331,7 @@ header {
   /* Peso da fonte */
   padding: 20px;
   /* Espaçamento interno */
-  margin: 20px 50px;
+  margin: 20px 150px;
   /* Margem */
   background-color: var(--cor-quatro);
   /* Cor de fundo */
@@ -416,7 +432,14 @@ header {
   color: #ffffff;
   /* Cor do texto */
 }
-
+#formulario-pergunta{
+  display: flex;
+  align-items: center;
+}
+.perguntas{
+  display: grid;
+ align-items: center;
+}
 /* Estilo para a seção de informações */
 .oka {
   font-size: 18px;
@@ -574,6 +597,9 @@ header {
   #ajuda {
     margin-left: 10%;
     /* Ajusta margem esquerda */
+  }
+  #ok{
+  font-size: smaller;
   }
 }
 
