@@ -1,741 +1,251 @@
-/* Reseta margens e preenchimentos, e define box-sizing para border-box em todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Definições de cores em variáveis CSS */
-:root {
-  --cor-primaria: #9EAC71;
-  /* Cor primária do tema */
-  --cor-secundaria: #545b3c;
-  /* Cor secundária do tema */
-  --cor-tres: #ece9e5;
-  /* Cor de fundo clara */
-  --cor-quatro: #C7B7A3;
-  /* Cor de fundo alternativa */
-  --BRANCO: white;
-  /* Cor branca */
-  --preto: black;
-  /* Cor preta */
-  --s: #ffdcc2;
-  /* Cor adicional para detalhes */
-}
-
-/* Estilo geral para o corpo e layout */
-body {
-  font-family: Arial, sans-serif;
-  /* Fonte padrão para o corpo */
-}
-
-/* Estilo para a barra de navegação superior */
-.nav-topo {
-  background-color: var(--cor-secundaria);
-  /* Cor de fundo */
-  display: flex;
-  /* Layout flexível */
-  align-items: center;
-  /* Alinhamento vertical */
-  justify-content: end;
-  /* Alinhamento horizontal à direita */
-  height: 30px;
-  /* Altura da barra */
-}
-
-/* Estilo para itens de lista na barra de navegação superior */
-.nav-topo li {
-  color: var(--BRANCO);
-  /* Cor do texto */
-}
-
-/* Estilo para links na barra de navegação superior */
-.nav-topo a {
-  color: var(--BRANCO);
-  /* Cor do texto */
-  text-decoration: none;
-  /* Remove o sublinhado */
-  padding: 1rem;
-  /* Espaçamento interno */
-}
-.container {
-  position: relative;
-  display: inline-block;
-}
-.imagem {
-  max-width: 100%;
-  height: auto;
-}
-.formulario {
-  position: absolute;
-  top: 20%; /* Ajuste a posição vertical */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-/* Estilo para o cabeçalho do site */
-header {
-  background-color: var(--cor-primaria);
-  /* Cor de fundo */
-  color: var(--BRANCO);
-  /* Cor do texto */
-  display: flex;
-  /* Layout flexível */
-  justify-content: space-between;
-  /* Espaçamento entre itens */
-  align-items: center;
-  /* Alinhamento vertical */
-  height: 100px;
-  /* Altura do cabeçalho */
-  padding: 0 2%;
-  /* Adiciona um pouco de preenchimento nas laterais */
-}
-
-/* Estilo para o logotipo */
-.logo {
-  text-decoration: none;
-  /* Remove o sublinhado */
-  display: flex;
-  /* Layout flexível */
-  align-items: center;
-  /* Alinhamento vertical */
-  font-size: 22px;
-  /* Tamanho da fonte */
-  margin: 0;
-  /* Remove margem */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* Fonte */
-}
-
-/* Estilo para a caixa de busca */
-.caixa-busca {
-  display: flex;
-  /* Layout flexível */
-  position: relative;
-  /* Para posicionamento do botão */
-  align-items: center;
-  /* Alinhamento vertical */
-}
-
-/* Estilo para o campo de busca */
-#busca {
-  height: 30px;
-  /* Altura */
-  width: 400px;
-  /* Largura */
-  border-radius: 20px;
-  /* Bordas arredondadas */
-  border: none;
-  /* Remove a borda */
-  cursor: pointer;
-  /* Cursor de clique */
-}
-
-/* Estilo para o texto do placeholder no campo de busca */
-.caixa-busca ::placeholder {
-  padding-left: 1rem;
-  /* Espaçamento interno */
-  color: var(--cor-tres);
-  /* Cor do texto */
-}
-
-/* Estilo para o botão de busca */
-#btn-busca {
-  background-color: transparent;
-  /* Fundo transparente */
-  border: none;
-  /* Remove a borda */
-  position: absolute;
-  /* Posiciona sobre o campo de busca */
-  right: 2%;
-  /* Alinha à direita */
-  cursor: pointer;
-  /* Cursor de clique */
-}
-
-/* Estilo para links no cabeçalho ao passar o mouse */
-.links-header :hover {
-  color: var(--cor-tres);
-  /* Cor ao passar o mouse */
-}
-
-/* Estilo para o menu hambúrguer (oculto por padrão) */
-.hamburger-menu {
-  display: none;
-  /* Oculto por padrão */
-  cursor: pointer;
-  /* Cursor de clique */
-}
-
-/* Estilo para as barras do menu hambúrguer */
-.bar {
-  width: 25px;
-  /* Largura */
-  height: 3px;
-  /* Altura */
-  background-color: #ffffff;
-  /* Cor das barras */
-  margin: 5px 0;
-  /* Margem entre barras */
-}
-
-/* Estilo para links no cabeçalho */
-.links-header a {
-  font-size: 25px;
-  /* Tamanho da fonte */
-  text-decoration: none;
-  /* Remove o sublinhado */
-  margin: 2rem;
-  /* Margem */
-  color: var(--BRANCO);
-  /* Cor do texto */
-}
-
-/* Estilo para a barra de navegação inferior */
-.nav-links {
-  background-color: var(--cor-tres);
-  /* Cor de fundo */
-  display: flex;
-  /* Layout flexível */
-  justify-content: center;
-  /* Centraliza itens */
-  height: 30px;
-  /* Altura */
-}
-
-/* Estilo para links na barra de navegação inferior */
-.nav-links a {
-  color: var(--cor-secundaria);
-  /* Cor do texto */
-  text-decoration: none;
-  /* Remove o sublinhado */
-  cursor: pointer;
-  /* Cursor de clique */
-  font-size: 20px;
-  /* Tamanho da fonte */
-  margin-right: 7rem;
-  /* Margem direita */
-}
-
-/* Estilo para o contêiner de conteúdo */
-#ok {
-  display: flex;
-  /* Layout flexível */
-  position: relative;
-  /* Posiciona elementos dentro */
-  justify-content: center;
-  /* Centraliza itens */
-}
-
-/* Estilo para o título principal */
-.titulo1 {
-  display: flex;
-  /* Layout flexível */
-  margin-left: 30px;
-  /* Margem esquerda */
-  font-size: 25px;
-  /* Tamanho da fonte */
-  align-items: center;
-  /* Alinhamento vertical */
-  margin: 6%;
-  /* Margem */
-  border-radius: 30px;
-  /* Bordas arredondadas */
-  background-color: #f4f4f4;
-  /* Cor de fundo */
-  padding: 20px;
-  /* Espaçamento interno */
-  color: var(--cor-primaria);
-  /* Cor do texto */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* Fonte */
-  text-align: justify;
-  /* Alinhamento do texto */
-}
-
-/* Estilo para o contêiner de grid */
-.sara {
-  display: grid;
-  /* Layout grid */
-  grid-template-columns: repeat(2, 1fr);
-  /* Colunas iguais */
-  gap: 5px;
-  /* Espaçamento entre itens */
-  align-items: center;
-  /* Alinhamento vertical */
- 
-}
-
-/* Estilo para os botões de contato */
-.btn-fale {
-  background-color: var(--cor-primaria);
-  /* Cor de fundo */
-  color: white;
-  /* Cor do texto */
-  border-radius: 50px;
-  /* Bordas arredondadas */
-  font-size: 20px;
-  /* Tamanho da fonte */
-  display: flex;
-  /* Layout flexível */
-  align-items: center;
-  /* Alinhamento vertical */
-  justify-content: center;
-  /* Centraliza itens */
-  border: 5px;
-  /* Largura da borda */
-  margin: 3%;
-  /* Margem */
-}
-
-/* Estilo para a seção de informações */
-#baby {
-  display: grid;
-  /* Layout grid */
-  align-items: center;
-  /* Alinhamento vertical */
-  color: white;
-  /* Cor do texto */
-  font-weight: bold;
-  /* Peso da fonte */
-  padding: 20px;
-  /* Espaçamento interno */
-  margin: 10px 150px;
-  /* Margem */
-  background-color: var(--cor-quatro);
-  /* Cor de fundo */
-  border-radius: 50px;
-  /* Bordas arredondadas */
-  width: 600px;
-  /* Largura */
-  height: 130px;
-  /* Altura */
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  /* Fonte */
-  font-size: 15px;
-  /* Tamanho da fonte */
-}
-babe {
-  display: flex;
-  /* Layout flexível */
-  align-items: center;
-  /* Alinhamento vertical */
-  color: white;
-  /* Cor do texto */
-  font-weight: bold;
-  /* Peso da fonte */
-  padding: 20px;
-  /* Espaçamento interno */
-  margin: 20px 150px;
-  /* Margem */
-  background-color: var(--cor-quatro);
-  /* Cor de fundo */
-  border-radius: 50px;
-  /* Bordas arredondadas */
-  width: 600px;
-  /* Largura */
-  height: 130px;
-  /* Altura */
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  /* Fonte */
-  font-size: 15px;
-  /* Tamanho da fonte */
-}
-
-/* Estilo para a seção de imagem */
-#img {
-  display: flex;
-  /* Layout flexível */
-  align-items: center;
-  /* Alinhamento vertical */
-  margin: 20px 70px;
-  /* Margem */
-  flex-direction: column;
-  /* Layout coluna */
-}
-
-/* Estilo para o contêiner de login */
-#login {
-  border: 4px solid var(--BRANCO);
-  /* Borda */
-  border-radius: 40px;
-  /* Bordas arredondadas */
-  background-color: var(--BRANCO);
-  /* Cor de fundo */
-  position: relative;
-  /* Posicionamento relativo */
-  justify-content: center;
-  /* Centraliza itens */
-}
-
-/* Estilo para a seção de ajuda */
-#sar {
-  font-size: 17px;
-  /* Tamanho da fonte */
-  justify-content: center;
-  /* Centraliza itens */
-}
-
-/* Estilo para a seção central */
-#central {
-  background-color: var(--cor-quatro);
-  /* Cor de fundo */
-  width: 1905px;
-  /* Largura */
-  height: 100px;
-  /* Altura */
-  text-decoration: none;
-  /* Remove o sublinhado */
-}
-.titulo2{
-  display: flex;
-  /* Layout flexível */
-  margin-left: 30px;
-  /* Margem esquerda */
-  font-size: 25px;
-  /* Tamanho da fonte */
-  align-items: center;
-  border-radius: 30px;
-  /* Bordas arredondadas */
-  background-color: #f4f4f4;
-  /* Cor de fundo */
-  padding: 20px;
-  /* Espaçamento interno */
-  color: var(--cor-primaria);
-  /* Cor do texto */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* Fonte */
-  text-align: justify;
-  /* Alinhamento do texto */
-}
-/* Estilo para a seção de saída */
-.sa {
-  text-decoration: none;
-  /* Remove o sublinhado */
-  margin-top: 20%;
-  /* Margem superior */
-  display: flex;
-  /* Layout flexível */
-  font-size: 17px;
-  /* Tamanho da fonte */
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  /* Fonte */
-  font-weight: bold;
-  /* Peso da fonte */
-  align-items: center;
-  /* Alinhamento vertical */
-  margin-left: 41%;
-  /* Margem esquerda */
-  color: #ffffff;
-  /* Cor do texto */
-}
-.retornar{
-  position: relative;
-  text-decoration: none;
- font-size: large;
- margin-left: 35%;
- top: 10px;
- color: var(--BRANCO);
-}
-
-/* Estilo para o botão de ajuda */
-#ajuda {
-  margin-left: 45.9%;
-  /* Margem esquerda */
-  justify-content: center;
-  /* Centraliza itens */
-  margin-top: 0.5%;
-  /* Margem superior */
-}
-
-/* Estilo para o link de ajuda */
-.sarinha {
-  text-decoration: none;
-  /* Remove o sublinhado */
-  color: #ffffff;
-  /* Cor do texto */
-}
-#formulario-pergunta{
-    height: 10%;
-  padding: 70px;
-  border-radius: 10%;
-  display: flex;
-  /* Layout flexível */
-  position: relative;
-  /* Posiciona elementos dentro */
-  justify-content: center;
-  /* Centraliza itens */
-
-}
-#nome{
-  width: 50%;
-  margin: 0%;
-  margin-left: 25%;
-  height: 30px;
-}
-#email{
-  width: 50%;
-  margin-left: 25%;
-  height: 30px;
-}
-#pergunta{
-width: 50%;
-margin-left: 25%;
-height: 90px;
-}
-#enviar2{
-  width: 10%;
-  margin-left: 45%;
-  height: 25px;
-}
-.label{
-  display: grid;
-  align-items: center;
-  background-color: #9EAC71;
-  margin: 10px 30%;
-  background-size: 20%;
-  padding: 70px;
-  border-radius: 10%;
-}
-#text1{
-  margin-left:40% ;
-  color: var(--BRANCO);
-}
-.perguntas{
-  display: grid;
- align-items: center;
-}
-/* Estilo para a seção de informações */
-.oka {
-  font-size: 18px;
-  /* Tamanho da fonte */
-  color: #ffffff;
-  /* Cor do texto */
-  margin-left: 45%;
-  /* Margem esquerda */
-  margin-top: 0.3%;
-  /* Margem superior */
-}
-
-/* Estilo para a seção de informações */
-.sari {
-  text-decoration: 0;
-  /* Remove o sublinhado */
-}
-
-/* Media Queries para dispositivos móveis */
-@media (max-width: 1200px) {
-  header {
-    flex-direction: column;
-    /* Layout coluna em telas menores */
-    height: auto;
-    /* Ajusta altura */
-    padding: 1rem;
-    /* Ajusta o preenchimento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
-  .logo {
-    font-size: 18px;
-    /* Ajusta tamanho da fonte */
+  
+  :root {
+    --cor-primaria: #9EAC71;
+    --cor-secundaria: #545b3c;
+    --cor-tres: #ece9e5;
+    --cor-quatro:#C7B7A3;
+    --BRANCO: white;
+    --preto: black;
+    --s: #ffdcc2;
   }
-
-  #busca {
-    width: 300px;
-    /* Ajusta largura do campo de busca */
-  }
-
-  .nav-links a {
-    margin-right: 2rem;
-    /* Ajusta margem direita */
-  }
-
-  #baby,
-  #babe {
-    width: 100%;
-    /* Ajusta largura para 100% */
-    margin: 10px 0;
-    /* Ajusta margens */
-  }
-
-  .titulo1 {
-    font-size: 28px;
-    /* Ajusta tamanho da fonte */
-    margin: 3%;
-    /* Ajusta margem */
-  }
-
-  .sara {
-    grid-template-columns: 1fr;
-    /* Coluna única em telas menores */
-  }
-
-  .links-header a {
-    font-size: 20px;
-    /* Ajusta tamanho da fonte */
-  }
-
-  .sa {
-    margin-left: 20%;
-    /* Ajusta margem esquerda */
-  }
-
-  #ajuda {
-    margin-left: 20%;
-    /* Ajusta margem esquerda */
-  }
-}
-
-@media (max-width: 768px) {
+  
   .nav-topo {
-    flex-direction: column;
-    /* Layout coluna para barra de navegação */
-    height: auto;
-    /* Ajusta altura */
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
   }
-
+  
+  .nav-topo li {
+    color: var(--BRANCO);
+  }
+  
   .nav-topo a {
-    padding: 0.5rem;
-    /* Ajusta preenchimento */
-  }
-
-  header {
+    color: var(--BRANCO);
+    text-decoration: none;
     padding: 1rem;
-    /* Ajusta preenchimento */
+  
   }
-
+  
+  header {
+    background-color: var(--cor-primaria);
+    color: var(--BRANCO);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  
+  }
+  
   .logo {
-    font-size: 16px;
-    /* Ajusta tamanho da fonte */
-    margin: 1rem 0;
-    /* Ajusta margem */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-
+  
+  .caixa-busca {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  
   #busca {
-    width: 100%;
-    /* Ajusta largura para 100% */
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  
+  
   }
-
+  
+  .caixa-busca ::placeholder {
+    padding-left: 1rem;
+    color: var(--cor-tres);
+  
+  }
+  
   #btn-busca {
-    right: 1rem;
-    /* Ajusta posição do botão de busca */
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+  
   }
+  
+  .links-header :hover {
+    color: var(--cor-tres);
+  
+  }
+ 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
 
   .links-header a {
-    font-size: 18px;
-    /* Ajusta tamanho da fonte */
-    margin: 1rem;
-    /* Ajusta margem */
+    font-size: 25px;
+    text-decoration: none;
+    margin: 2rem;
+    color: var(--BRANCO);
   }
-
-  .titulo1 {
-    font-size: 24px;
-    /* Ajusta tamanho da fonte */
-    margin: 2%;
-    /* Ajusta margem */
-  }
-
-  .sara {
-    grid-template-columns: 1fr;
-    /* Coluna única em telas menores */
-  }
-
-  .btn-fale {
-    font-size: 18px;
-    /* Ajusta tamanho da fonte */
-    margin: 2%;
-    /* Ajusta margem */
-  }
-
-  #baby,
-  #babe {
-    width: 100%;
-    /* Ajusta largura para 100% */
-    margin: 10px 0;
-    /* Ajusta margens */
-  }
-
-  .sa {
-    margin-left: 10%;
-    /* Ajusta margem esquerda */
-  }
-
-  #ajuda {
-    margin-left: 10%;
-    /* Ajusta margem esquerda */
-  }
-  #ok{
-  font-size: smaller;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    flex-direction: column;
-    /* Layout coluna para cabeçalho */
-    height: auto;
-    /* Ajusta altura */
-  }
-
-  .logo {
-    font-size: 14px;
-    /* Ajusta tamanho da fonte */
-  }
-
-  #busca {
-    width: 100%;
-    /* Ajusta largura para 100% */
-  }
-
-  #btn-busca {
-    right: 1rem;
-    /* Ajusta posição do botão de busca */
-  }
-
+  
   .nav-links {
-    flex-direction: column;
-    /* Layout coluna para links de navegação */
+    background-color: var(--cor-tres);
+    display: flex;
+    justify-content: center;
+    height: 30px;
   }
-
+  
   .nav-links a {
-    margin-right: 0;
-    /* Remove margem direita */
-    margin-bottom: 1rem;
-    /* Adiciona margem inferior */
-  }
-
-  .titulo1 {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    cursor: pointer;
     font-size: 20px;
-    /* Ajusta tamanho da fonte */
-    margin: 1%;
-    /* Ajusta margem */
+    margin-right: 7rem;
+  
   }
 
-  .btn-fale {
-    font-size: 16px;
-    /* Ajusta tamanho da fonte */
-    padding: 10px;
-    /* Ajusta preenchimento */
-  }
 
-  #baby,
-  #babe {
-    width: 100%;
-    /* Ajusta largura para 100% */
-    margin: 10px 0;
-    /* Ajusta margens */
+#ok {
+    display: flex;
+    position: relative;
+    justify-content: center;
   }
-
-  .sa,
-  #ajuda {
-    margin-left: 5%;
-    /* Ajusta margem esquerda */
+  
+  .titulo1 {
+    display: flex;
+    margin-left: 30px;
+    font-size: 35px;
+    align-items: center;
+    margin: 6%;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: var(--cor-primaria);
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
   }
-
+  
   .sara {
-    grid-template-columns: 1fr;
-    /* Coluna única em telas menores */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
   }
-}
+  
+  .btn-fale {
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px;
+    margin: 3%;
+  }
+  
+  #baby {
+    display: grid;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px 50px;
+    background-color: var(--cor-quatro);
+    border-radius: 50px;
+    width: 600px;
+    height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  #babe {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 50px;
+    background-color: var(--cor-quatro);
+    border-radius: 50px;
+    width: 600px;
+    height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  #img {
+    display: flex;
+    align-items: center;
+    margin: 20px 70px;
+    flex-direction: column;
+  }
+  
+  #login {
+    border: 4px solid var(--BRANCO);
+    border-radius: 40px;
+    background-color: var(--BRANCO);
+    position: relative;
+    justify-content: center;
+  }
+  #sar{
+    font-size: 17px;
+    justify-content: center;
+  }
+  #central{
+    background-color:var(--cor-quatro);
+    width: 1905px;
+    height: 100px;
+    text-decoration: none;
+  }
+  .sa{
+   text-decoration: none;
+    margin-top: 20%;
+    display: flex;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 41%;
+    color: #ffffff;
+  }
+  #ajuda{
+  margin-left: 45.9%;
+  justify-content: center;
+  margin-top: 0.5%;
+  }
+  .sarinha{
+    text-decoration: none;
+    color: #ffffff;
+  
+  }
+  .oka{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 45% ;
+    margin-top: 0.3%;
+  }
+  .sari{
+    text-decoration: 0;
+  }
+   

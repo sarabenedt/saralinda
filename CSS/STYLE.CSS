@@ -8,18 +8,23 @@
   --cor-primaria: #9EAC71;
   --cor-secundaria: #545b3c;
   --cor-tres: #ece9e5;
-  --cor-quatro:#C7B7A3;
+  --cor-quatro: #C7B7A3;
   --BRANCO: white;
   --preto: black;
   --s: #ffdcc2;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .nav-topo {
   background-color: var(--cor-secundaria);
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   height: 30px;
+  padding: 0 1rem;
 }
 
 .nav-topo li {
@@ -30,7 +35,6 @@
   color: var(--BRANCO);
   text-decoration: none;
   padding: 1rem;
-
 }
 
 header {
@@ -39,233 +43,189 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .logo {
-  text-decoration: none;
   display: flex;
   align-items: center;
   font-size: 22px;
-  margin: 3%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0.5rem;
 }
 
 .caixa-busca {
   display: flex;
   position: relative;
   align-items: center;
+  margin: 0.5rem;
+  flex-grow: 1;
 }
 
 #busca {
   height: 30px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 20px;
   border: none;
-  cursor: pointer;
-
-
-}
-
-.caixa-busca ::placeholder {
-  padding-left: 1rem;
-  color: var(--cor-tres);
-
+  padding: 0 1rem;
 }
 
 #btn-busca {
   background-color: transparent;
   border: none;
   position: absolute;
-  right: 2%;
+  right: 0.5rem;
   cursor: pointer;
-
 }
 
-.links-header :hover {
-  color: var(--cor-tres);
-
+.links-header {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
 }
 
 .links-header a {
-  font-size: 25px;
+  font-size: 16px;
   text-decoration: none;
-  margin: 2rem;
+  margin: 0 1rem;
   color: var(--BRANCO);
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
   background-color: var(--cor-tres);
   display: flex;
   justify-content: center;
-  height: 30px;
+  flex-wrap: wrap;
+  padding: 0.5rem;
 }
 
 .nav-links a {
   color: var(--cor-secundaria);
   text-decoration: none;
   cursor: pointer;
-  font-size: 20px;
-  margin-right: 7rem;
-
+  font-size: 14px;
+  margin: 0.5rem;
 }
+
 #banner {
   width: 100%;
   background-image: url("../IMGS/imagem1.png");
   background-size: cover;
   height: 800px;
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.column{
-
-align-items: center;
-font-weight: bold;
-margin: 200px 100px;
-background-color: var(--cor-tres);
-border-radius: 20px;
-width: 600px;
-height: 300px;
-opacity: 50%;
-border:5px solid var(--s);
-
+.column {
+  align-items: center;
+  font-weight: bold;
+  margin: 200px 100px;
+  background-color: var(--cor-tres);
+  border-radius: 20px;
+  width: 600px;
+  height: 300px;
+  opacity: 50%;
+  border: 5px solid var(--s);
 }
-#text-card{
-font-weight: bold;
-color: var(--BRANCO);
-font-size: 35px;
-font-family: Georgia, 'Times New Roman', Times, serif;
+
+#text-card {
+  font-weight: bold;
+  color: var(--BRANCO);
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.outro{
 
-  align-items: center;
-  height: 400px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-left: 240px;
-  clear: left;
-  z-index: 900;
-}  
-.outra{
-
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 135px;
-  margin-left: 1110px;
-  clear: left;
-  z-index: 900;
-
-}  
-.outre{
-
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 255px;
-  margin-left: 940px;
-  z-index: 900;
-}  
-.outru{
-
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 255px;
-  margin-left: 1040px;
-  z-index: 900;
-  
-}  
-.outri{
-
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 260px;
-  margin-left: 1180px;
-  z-index: 900;
-  
-}  
+.outro,
+.outra,
+.outru,
+.outre,
+.outri,
 .outrao{
-
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
+ 
   display: flex;
   justify-content: center;
-  margin-top: 265px;
-  margin-left: 1310px;
-  z-index: 900;
+  align-items: center;
+  margin: 1px;
   
-}  
-.livro1{
-
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
+}
+.livro1,
+.livro2,
+.livro3,
+.livro4 {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 255px;
-  margin-left: 130px;
-  z-index: 900;
-}  
-.livro2{
-
   align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 255px;
-  margin-left: 220px;
-  z-index: 900;
-  
-}  
-.livro3{
+  margin: 1px;
+  z-index: 9000;
+}
 
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  margin-top: 260px;
-  margin-left: 355px;
-  z-index: 900;
-  
-}  
-.livro4{
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  align-items: center;
-  height: 200px;
-  color: var(--BRANCO);
+  .logo {
+    margin: 1rem 0;
+  }
+
+  .links-header {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .links-header a {
+    margin: 0.5rem 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  #banner {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .column {
+    width: 30%;
+    margin: 2rem auto;
+  }
+}
+
+.caixa-busca {
+  position: relative;
+  max-width: 100%;
+}
+.caixa-busca input[type="search"] {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Adiciona espaço para o ícone */
+  box-sizing: border-box;
+}
+.caixa-busca button {
   position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 10px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 265px;
-  margin-left: 480px;
-  z-index: 900;
-  
-}  
+}
+.caixa-busca button img {
+  width: 20px;
+  height: 20px;
+}
