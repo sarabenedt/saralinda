@@ -229,3 +229,196 @@ header {
   width: 20px;
   height: 20px;
 }
+
+/* novos códigos adicionados*/
+
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+}
+
+.nav-topo {
+  background-color: #333; /* Cor de fundo da navegação superior */
+  color: white; /* Cor do texto */
+  display: flex; /* Usar flexbox para layout */
+  justify-content: space-between; /* Espaço entre os itens */
+  padding: 10px; /* Preenchimento */
+}
+
+.nav-topo a {
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remover sublinhado */
+  padding: 10px; /* Preenchimento */
+}
+
+.header {
+  display: flex; /* Usar flexbox para layout */
+  flex-direction: column; /* Direção da coluna */
+  align-items: center; /* Alinhar itens ao centro */
+  padding: 20px; /* Preenchimento */
+}
+
+.logo {
+  display: flex; /* Usar flexbox para layout */
+  align-items: center; /* Alinhar itens ao centro */
+}
+
+.logo h1 {
+  margin: 0; /* Remover margem */
+  padding-left: 10px; /* Preenchimento à esquerda */
+}
+
+.caixa-busca {
+  display: flex; /* Usar flexbox para layout */
+  margin: 20px 0; /* Margem superior e inferior */
+}
+
+.caixa-busca input {
+  padding: 10px; /* Preenchimento */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 5px 0 0 5px; /* Borda arredondada */
+  outline: none; /* Remover contorno */
+}
+
+.caixa-busca button {
+  padding: 10px; /* Preenchimento */
+  border: 1px solid #ccc; /* Borda */
+  border-left: none; /* Remover borda esquerda */
+  border-radius: 0 5px 5px 0; /* Borda arredondada */
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Cursor de ponteiro */
+}
+
+.links-header a {
+  margin: 0 10px; /* Margem esquerda e direita */
+  color: #333; /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado */
+  display: flex; /* Usar flexbox para layout */
+  align-items: center; /* Alinhar itens ao centro */
+}
+
+.hamburger-menu {
+  display: none; /* Ocultar por padrão */
+  flex-direction: column; /* Direção da coluna */
+  cursor: pointer; /* Cursor de ponteiro */
+}
+
+.hamburger-menu .bar {
+  width: 25px; /* Largura */
+  height: 3px; /* Altura */
+  background-color: #333; /* Cor de fundo */
+  margin: 4px 0; /* Margem superior e inferior */
+}
+
+.nav-links {
+  display: flex; /* Usar flexbox para layout */
+  justify-content: center; /* Centralizar itens */
+  background-color: #f8f8f8; /* Cor de fundo */
+  padding: 10px 0; /* Preenchimento superior e inferior */
+}
+
+.nav-links a {
+  margin: 0 15px; /* Margem esquerda e direita */
+  color: #333; /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado */
+}
+
+.titulo1 {
+  text-align: center; /* Centralizar texto */
+  margin-top: 20px; /* Margem superior */
+}
+
+.sara {
+  display: flex; /* Usar flexbox para layout */
+  flex-wrap: wrap; /* Permitir quebra de linha */
+  justify-content: center; /* Centralizar itens */
+  padding: 20px; /* Preenchimento */
+}
+
+.baby {
+  flex: 1 1 300px; /* Crescer e encolher, largura mínima de 300px */
+  margin: 10px; /* Margem */
+  padding: 20px; /* Preenchimento */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+#central {
+  text-align: center; /* Centralizar texto */
+  padding: 20px; /* Preenchimento */
+  background-color: #f8f8f8; /* Cor de fundo */
+}
+
+.sa {
+  font-size: 1.2em; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Margem inferior */
+}
+
+.sari .oka {
+  margin-top: 10px; /* Margem superior */
+  color: #007bff; /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado */
+}
+
+#ajuda {
+  display: flex; /* Usar flexbox para layout */
+  justify-content: center; /* Centralizar itens */
+  margin-top: 20px; /* Margem superior */
+}
+
+#ajuda a {
+  margin: 0 10px; /* Margem esquerda e direita */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-topo {
+      flex-direction: column; /* Direção da coluna */
+      align-items: center; /* Alinhar itens ao centro */
+  }
+
+  .header {
+      flex-direction: column; /* Direção da coluna */
+  }
+
+  .caixa-busca {
+      flex-direction: column; /* Direção da coluna */
+  }
+
+  .links-header {
+      flex-direction: column; /* Direção da coluna */
+      align-items: center; /* Alinhar itens ao centro */
+  }
+
+  .hamburger-menu {
+      display: flex; /* Mostrar menu hamburger */
+  }
+
+  .nav-links {
+      flex-direction: column; /* Direção da coluna */
+  }
+
+  .nav-links a {
+      padding: 10px 0; /* Preenchimento superior e inferior */
+  }
+}
+
+
+
+/* Notas:
+
+
+TML:
+
+1. Cada linha foi comentada para explicar sua função.
+
+Ajustei algumas tags e classes para melhorar a estrutura e a semântica do código.
+CSS:
+
+2. Adicionei comentários para cada bloco de código para explicar o que ele faz.
+
+Usei flexbox para criar um layout responsivo.
+Adicionei uma media query para telas menores que 768px para ajustar o layout para dispositivos móveis.*/
